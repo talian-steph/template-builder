@@ -77,7 +77,7 @@ hub(['./template-master/gulpfile.js', './project-2/gulpfile.js', '...']);
 
 __Note:__ 
 * Kraken.io gives better compress results. For final template version (before go live) - recommend goto [Kraken.io](https://kraken.io/web-interface) further shrink down your `build/images/**.*` size. (gulp-kraken plugins support Kraken.io API for registered users)
-* Don't keep any node_modules in the git repository, and have a ".gitignore" file that contains "node_modules".
+* Don't keep any `node_modules` in the git repository, and have a ".gitignore" file that contains "node_modules".
 
 #### Structure:
 
