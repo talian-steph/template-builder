@@ -71,10 +71,10 @@ hub(['./template-master/gulpfile.js', './project-2/gulpfile.js', '...']);
   * name: `"name": "new-template"`, the name will be the zip file name. :bulb: [see naming rules](https://docs.npmjs.com/files/package.json)
   * description: `"description": "new description"`    
 3. Once you've done composing the template, open `Terminal`, navigate to your template project folder, run `gulp` or `gulp [task]` for build.
-4. You will be getting a zip file in build folder to upload to LP tool 
+4. You will be getting a zip file in `build` folder for LP tool upload 
 5. To build all project at one-go, run `gulp` in `template-builder` 
 
-__Note:__ Kraken.io gives better compress results. For final template version before go live - recommend to goto [Kraken.io](https://kraken.io/web-interface) further shink down your images. (gulp-kraken plugins support Kraken.io API for registered users)
+__Note:__ Kraken.io gives better compress results. For final template version (before go live) - recommend goto [Kraken.io](https://kraken.io/web-interface) further shrink down your `build/images/**.*` size. (gulp-kraken plugins support Kraken.io API for registered users)
 
 #### Structure:
 
