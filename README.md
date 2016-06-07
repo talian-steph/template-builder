@@ -73,27 +73,13 @@ hub(['./template-master/gulpfile.js', './project-2/gulpfile.js', '...']);
   3. Open Terminal, navigate to your template project folder, run `gulp` or `gulp [task]` for build.
   4. To build all project at one-go, run `gulp` in `template-builder` 
 
-Commands
---------
-
-| **Command**   | **Description**
-|:--------------|:---------------------------------------------------------------
-| `help`        | Shows the help dialog
-| `build`       | Invokes `make`/`msbuild.exe` and builds the native addon
-| `clean`       | Removes the `build` directory if it exists
-| `configure`   | Generates project build files for the current platform
-| `rebuild`     | Runs `clean`, `configure` and `build` all in a row
-| `install`     | Installs node header files for the given version
-| `list`        | Lists the currently installed node header versions
-| `remove`      | Removes the node header files for the given version
-
+####Structure:
 
 | **Files**     | **Description**
 |:--------------|:---------------------------------------------------------------
 | gulpfile.js   | rebuild `build` folder: optimize images, optimize css & js, output template in `zip` file for LP tool upload
 | package.json  | contains project meta data & includes the list of dependencies to install from npm when running npm install
-| index.html    | `<!-- build:css css/main.css --><![endif]-->` and 
-|               |  `<!-- build:js js/main.js --><!-- endbuild -->` will sequentially concats multiple styles/ scripts into single file 
+| index.html    | `<!-- build:css css/main.css --><![endif]-->` and `<!-- build:js js/main.js --><!-- endbuild -->` will sequentially concats multiple styles/ scripts into single file 
 | css\main.css  | for custom styles only (do not change the filename)
 | images        | to store images; keep the small & non bg repeat images in `sprites` folder 
 | js            | for project specific javascripts
