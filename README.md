@@ -64,9 +64,7 @@ __Important:__ If you would like to update `lib/h5bp.css`, please make sure tag 
 hub(['./template-master/gulpfile.js', './project-2/gulpfile.js', '...']);
 ```
 
-### Getting Started
-#### Steps to start a new template project:
-1. Duplicate `template-master` folder & rename with the new project name, e.g. `new-template`
+### Getting Started1. Duplicate `template-master` folder & rename with the new project name, e.g. `new-template`
 2. Open `package.json` in `new-template`, edit
   * name: `"name": "new-template"`, the name will be the zip file name. :bulb: [see naming rules](https://docs.npmjs.com/files/package.json)
   * description: `"description": "new description"`    
