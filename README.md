@@ -68,12 +68,16 @@ hub(['./template-master/gulpfile.js', './project-2/gulpfile.js', '...']);
 1. Duplicate `template-master` folder & rename with the new project name, e.g. `new-template`
 2. Open `package.json` in `new-template`, edit
   * name: `"name": "new-template"`, the name will be the zip file name. :bulb: [see naming rules](https://docs.npmjs.com/files/package.json)
-  * description: `"description": "new description"`    
-3. Once you've done composing the template, open `Terminal`, navigate to your template project folder, run `gulp` or `gulp [task]` for build.
+  * description: `"description": "new description"`      
+3. Once you've done composing the template, open `Terminal`, navigate to your template project folder
+  * run `npm install` to get your project ready
+  * run `gulp` or `gulp [task]` for build
 4. You will be getting a zip file in `build` folder for LP tool upload 
 5. To build all project at one-go, run `gulp` in `template-builder` 
 
-__Note:__ Kraken.io gives better compress results. For final template version (before go live) - recommend goto [Kraken.io](https://kraken.io/web-interface) further shrink down your `build/images/**.*` size. (gulp-kraken plugins support Kraken.io API for registered users)
+__Note:__ 
+* Kraken.io gives better compress results. For final template version (before go live) - recommend goto [Kraken.io](https://kraken.io/web-interface) further shrink down your `build/images/**.*` size. (gulp-kraken plugins support Kraken.io API for registered users)
+* Don't keep any node_modules in the git repository, and have a ".gitignore" file that contains "node_modules".
 
 #### Structure:
 
