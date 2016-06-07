@@ -69,7 +69,7 @@ hub(['./template-master/gulpfile.js', './project-2/gulpfile.js', '...']);
 1. Duplicate `template-master` folder & rename with the new project name, e.g. `new-template`
 2. Open `package.json` in `new-template`, edit
   * name: `"name": "new-template"`, the name will be the zip file name. :bulb: [see naming rules](https://docs.npmjs.com/files/package.json)
-  * description: `"description": "new description"    
+  * description: `"description": "new description"`    
 3. Once you've done composing the template, open `Terminal`, navigate to your template project folder, run `gulp` or `gulp [task]` for build.
 4. You will be getting a zip file in build folder to upload to LP tool 
 5. To build all project at one-go, run `gulp` in `template-builder` 
