@@ -56,7 +56,7 @@ The `-g` flag command npm to install Gulp globally which will allows you to use 
 How to Use
 ----------
 
-`__Important:__` If you would like to update `lib/h5bp.css`, please make sure tag `/*CUSTOM-STYLE*/` is added in "Author's Custom Style" section.
+__`Important:`__ If you would like to update `lib/h5bp.css`, please make sure tag `/*CUSTOM-STYLE*/` is added in "Author's Custom Style" section.
 
 `gulpfile.js` in template-builder serves as the master to run gulp task from project folder. Please ensure your project is added into the master gulpfile for one-time build for all.
 
@@ -81,5 +81,5 @@ hub(['./template-master/gulpfile.js', './project-2/gulpfile.js', '...']);
 | package.json  | contains project meta data & the list of dependencies for `npm install`
 | index.html    | `<!-- build:css css/main.css --><![endif]-->` and `<!-- build:js js/main.js --><!-- endbuild -->` will sequentially concats multiple styles/ scripts into single file 
 | images        | to store images; keep the small & non bg repeat images in `sprites` folder 
-| css\main.css  | for project specific styles `__Note:__ do not change the file name`
+| css\main.css  | for project specific styles __`Note:`__ do not change the file name
 | js            | for project specific javascripts
