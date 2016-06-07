@@ -74,7 +74,7 @@ hub(['./template-master/gulpfile.js', './project-2/gulpfile.js', '...']);
 4. You will be getting a zip file in build folder to upload to LP tool 
 5. To build all project at one-go, run `gulp` in `template-builder` 
 
-__Note:__ Kraken.io gives better compress results. For final template version before go live - recommend to goto [Kraken.io](https://kraken.io/web-interface) further shink down your images. (gulp-kraken plugins support Kraken.io API for paid users)
+__Note:__ Kraken.io gives better compress results. For final template version before go live - recommend to goto [Kraken.io](https://kraken.io/web-interface) further shink down your images. (gulp-kraken plugins support Kraken.io API for registered users)
 
 #### Structure:
 
