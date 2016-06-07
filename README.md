@@ -73,6 +73,22 @@ hub(['./template-master/gulpfile.js', './project-2/gulpfile.js', '...']);
   3. Open Terminal, navigate to your template project folder, run `gulp` or `gulp [task]` for build.
   4. To build all project at one-go, run `gulp` in `template-builder` 
 
+Commands
+--------
+
+`node-gyp` responds to the following commands:
+
+| **Command**   | **Description**
+|:--------------|:---------------------------------------------------------------
+| `help`        | Shows the help dialog
+| `build`       | Invokes `make`/`msbuild.exe` and builds the native addon
+| `clean`       | Removes the `build` directory if it exists
+| `configure`   | Generates project build files for the current platform
+| `rebuild`     | Runs `clean`, `configure` and `build` all in a row
+| `install`     | Installs node header files for the given version
+| `list`        | Lists the currently installed node header versions
+| `remove`      | Removes the node header files for the given version
+
 - Structure:
 | **Files**     | **Description**
 |:--------------|:---------------------------------------------------------------
