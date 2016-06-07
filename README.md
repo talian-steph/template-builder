@@ -65,15 +65,15 @@ hub(['./template-master/gulpfile.js', './project-2/gulpfile.js', '...']);
 ```
 
 ### Getting Started
-- Steps to start a new template project:
-  1. Duplicate `template-master` folder & rename with the new project name, e.g. `new-template`
-  2. Open `package.json` in `new-template`, edit
-    * name: `"name": "new-template"` :bulb: [see naming rules](https://docs.npmjs.com/files/package.json)
-    * description: `"description": "new description"  
-  3. Open Terminal, navigate to your template project folder, run `gulp` or `gulp [task]` for build.
-  4. To build all project at one-go, run `gulp` in `template-builder` 
+##### Steps to start a new template project:
+1. Duplicate `template-master` folder & rename with the new project name, e.g. `new-template`
+2. Open `package.json` in `new-template`, edit
+  * name: `"name": "new-template"` :bulb: [see naming rules](https://docs.npmjs.com/files/package.json)
+  * description: `"description": "new description"  
+3. Open Terminal, navigate to your template project folder, run `gulp` or `gulp [task]` for build.
+4. To build all project at one-go, run `gulp` in `template-builder` 
 
-####Structure:
+##### Structure:
 
 | **Files**     | **Description**
 |:--------------|:---------------------------------------------------------------
