@@ -71,15 +71,15 @@ hub(['./template-master/gulpfile.js', './project-2/gulpfile.js', '...']);
     * name: `"name": "new-template"` :bulb: [see naming rules](https://docs.npmjs.com/files/package.json)
     * description: `"description": "new description"  
   3. Structure:
-    | **Files**     | **Description**
-    |:--------------|:---------------------------------------------------------------
-    | gulpfile.js   | rebuild `build` folder: optimize images, optimize css & js, output template in `zip` file for LP tool upload
-    | package.json  | contains project meta data & includes the list of dependencies to install from npm when running npm install
-    | index.html    | `<!-- build:css css/main.css --><![endif]-->` and 
-    |               |  `<!-- build:js js/main.js --><!-- endbuild -->` will sequentially concats multiple styles/ scripts into single file 
-    | css\main.css  | for custom styles only (do not change the filename)
-    | images        | to store images; keep the small & non bg repeat images in `sprites` folder 
-    | js            | for project specific javascripts
+| **Files**     | **Description**
+|:--------------|:---------------------------------------------------------------
+| gulpfile.js   | rebuild `build` folder: optimize images, optimize css & js, output template in `zip` file for LP tool upload
+| package.json  | contains project meta data & includes the list of dependencies to install from npm when running npm install
+| index.html    | `<!-- build:css css/main.css --><![endif]-->` and 
+|               |  `<!-- build:js js/main.js --><!-- endbuild -->` will sequentially concats multiple styles/ scripts into single file 
+| css\main.css  | for custom styles only (do not change the filename)
+| images        | to store images; keep the small & non bg repeat images in `sprites` folder 
+| js            | for project specific javascripts
   4. Open Terminal, navigate to your template project folder, run `gulp` or `gulp [task]` for build.
   5. To build all project at one-go, run `gulp` in `template-builder` 
 
