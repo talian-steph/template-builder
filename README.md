@@ -77,9 +77,9 @@ hub(['./template-master/gulpfile.js', './project-2/gulpfile.js', '...']);
 
 | **Files**     | **Description**
 |:--------------|:---------------------------------------------------------------
-| gulpfile.js   | rebuild `build` folder: optimize images, optimize css & js, output template in `zip` file for LP tool upload
-| package.json  | contains project meta data & includes the list of dependencies to install from npm when running npm install
+| gulpfile.js   | optimize images, optimize css & js, output template in `zip` file for LP tool upload
+| package.json  | contains project meta data & the list of dependencies for `npm install`
 | index.html    | `<!-- build:css css/main.css --><![endif]-->` and `<!-- build:js js/main.js --><!-- endbuild -->` will sequentially concats multiple styles/ scripts into single file 
-| css\main.css  | for custom styles only (do not change the filename)
 | images        | to store images; keep the small & non bg repeat images in `sprites` folder 
+| css\main.css  | for project specific styles __note:__ do not change the filename
 | js            | for project specific javascripts
