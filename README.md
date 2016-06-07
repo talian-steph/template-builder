@@ -76,8 +76,6 @@ hub(['./template-master/gulpfile.js', './project-2/gulpfile.js', '...']);
 Commands
 --------
 
-`node-gyp` responds to the following commands:
-
 | **Command**   | **Description**
 |:--------------|:---------------------------------------------------------------
 | `help`        | Shows the help dialog
@@ -89,7 +87,7 @@ Commands
 | `list`        | Lists the currently installed node header versions
 | `remove`      | Removes the node header files for the given version
 
-- Structure:
+
 | **Files**     | **Description**
 |:--------------|:---------------------------------------------------------------
 | gulpfile.js   | rebuild `build` folder: optimize images, optimize css & js, output template in `zip` file for LP tool upload
