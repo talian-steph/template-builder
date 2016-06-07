@@ -58,22 +58,25 @@ How to Use
 
 __Important:__ If you would like to update `lib/h5bp.css`, please make sure tag `/*CUSTOM-STYLE*/` is added in "Author's Custom Style" section.
 
-`gulpfile.js` in template-builder serves as the master to run gulp task from project folder. Please ensure your project is added into the master gulpfile for one-time build for all.
+`gulpfile.js` in template-builder serves as the master to run gulp task from all project folders. Please ensure your project is added into the master gulpfile for a one-time build for all.
 
 ``` bash
 hub(['./template-master/gulpfile.js', './project-2/gulpfile.js', '...']);
 ```
 
 ### Getting Started
-##### Steps to start a new template project:
+#### Steps to start a new template project:
 1. Duplicate `template-master` folder & rename with the new project name, e.g. `new-template`
 2. Open `package.json` in `new-template`, edit
-  * name: `"name": "new-template"` :bulb: [see naming rules](https://docs.npmjs.com/files/package.json)
-  * description: `"description": "new description"  
-3. Open Terminal, navigate to your template project folder, run `gulp` or `gulp [task]` for build.
-4. To build all project at one-go, run `gulp` in `template-builder` 
+  * name: `"name": "new-template"`, the name will be the zip file name. :bulb: [see naming rules](https://docs.npmjs.com/files/package.json)
+  * description: `"description": "new description"    
+3. Once you've done composing the template, open `Terminal`, navigate to your template project folder, run `gulp` or `gulp [task]` for build.
+4. You will be getting a zip file in build folder to upload to LP tool 
+5. To build all project at one-go, run `gulp` in `template-builder` 
 
-##### Structure:
+__Note:__ Kraken.io gives better compress results. For final template version before go live - recommend to goto [Kraken.io](https://kraken.io/web-interface) further shink down your images. (gulp-kraken plugins support Kraken.io API for paid users)
+
+#### Structure:
 
 | **Files**     | **Description**
 |:--------------|:---------------------------------------------------------------
@@ -81,5 +84,5 @@ hub(['./template-master/gulpfile.js', './project-2/gulpfile.js', '...']);
 | package.json  | contains project meta data & the list of dependencies for `npm install`
 | index.html    | `<!-- build:css css/main.css --><![endif]-->` and `<!-- build:js js/main.js --><!-- endbuild -->` will sequentially concats multiple styles/ scripts into single file 
 | images        | to store images; keep the small & non bg repeat images in `sprites` folder 
-| css\main.css  | for project specific styles __Note:__ do not change the file name
+| css\main.css  | for project specific styles (__Note:__ do not change the file name)
 | js            | for project specific javascripts
